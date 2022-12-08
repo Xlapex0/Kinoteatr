@@ -1,0 +1,108 @@
+:root{
+    --color1: black;
+    --color2: rgb(121, 27, 27);
+    --colortext1: white;
+    --colortext2: black;
+}
+body{
+    background-color: var(--color1);
+    margin: 0;
+
+}
+header{
+    background: linear-gradient(180deg, var(--color1) 0%, var(--color2) 100%);
+    width: 100%;
+    padding: 10px;
+    border-bottom: 5px groove gray;
+    color: var(--colortext1);
+    padding-left: 0%;
+    padding-right: 0%;
+}
+footer{
+    border-top: 5px groove gray;
+    align-items: center;
+    background: linear-gradient(360deg, var(--color1) 0%, var(--color2) 100%);
+    width: 100%;
+    padding: 10px;
+    color: var(--colortext1);
+    padding-left: 0%;
+    padding-right: 0%;
+}
+a.text:active,a.text:hover,a.text{
+    text-decoration: none;
+    color: var(--colortext2);
+}
+hr{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2px;
+    width: 33%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.column.heading{
+    width: 33%;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+.advertisement{
+    width: 60px;
+    height: 0px; 
+    margin: 3px;
+}
+.heading-logo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.menu{
+    background-color: white;
+    border-radius: 10px;
+}
+.menu-item{
+    transition: 1s;
+    background: none;
+    border-color: white;
+    border-radius: 10px;
+}
+.container.main{
+    background-image: url(/img/фон.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container.main>div.column{
+
+    backdrop-filter: blur(5px);
+}
+.container.main>div.column>div.row{
+    color:white;
+}
+.menu-item:hover{
+    transition: 1s;
+    background: brown;
+    border-color: white;
+    border-radius: 10px;
+}
