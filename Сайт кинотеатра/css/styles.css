@@ -35,13 +35,26 @@ a.text:active,a.text:hover,a.text{
 hr{
     width: 100%;
 }
+
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-left: 0%;
     padding-right: 0%;
 }
+.container.main{
+    background-image: url(/img/фон.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container.main>div.column{
+    backdrop-filter: blur(5px);
+    color:var(--colortext1);
+}
+
 .column{
     display: flex;
     flex-wrap: wrap;
@@ -49,28 +62,26 @@ hr{
     padding: 2px;
     width: 33%;
 }
+.column.heading{
+    width: 33%;
+    align-items: center;
+}
+
 .row{
     display: flex;
     justify-content: center;
     width: 100%;
     padding-bottom: 10px;
 }
-.nov{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2px;
-    width: 40%;
-    color: var(--colortext1);
-}
-.column.heading{
-    width: 33%;
-    align-items: center;
-}
 .logo{
     width: 40px;
     height: 40px;
 }
+.preview_img{
+    width: 150px;
+    height: 220px;
+}
+
 .advertisement{
     width: 60px;
     height: 0px; 
@@ -85,16 +96,34 @@ hr{
     padding: 10px;
     border-radius: 20px;
 }
+
 .menu{
     background-color: white;
     border-radius: 10px;
 }
 .menu-item{
     transition: 1s;
-    background: none;
+    background: white;
     border-color: white;
     border-radius: 10px;
 }
+.menu-item:hover{
+    transition: 1s;
+    background: brown;
+    border-color: white;
+    border-radius: 10px;
+}
+.menu_news{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: none;
+}
+.menu_news>div.row>button.menu-item{
+    width: 100%;
+    height: 25%;
+    
+}
+
 .tab{
     transition: 1s;
     background: white;
@@ -103,43 +132,13 @@ hr{
     width: 200px;
     height: 50px;
 }
-.container.main{
-    background-image: url(/img/фон.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.container.main>div.column{
-
-    backdrop-filter: blur(5px);
-}
-.container.main>div.column>div.row{
-    color:white;
-}
 .tab:hover{
     transition: 1s;
     background: brown;
     border-color: white;
     border-radius: 10px;   
 }
-.tab button.active {
-    background-color: brown;
-  }
-.menu-item:hover{
-    transition: 1s;
-    background: brown;
-    border-color: white;
-    border-radius: 10px;
-}
-.p{
-    margin: 6px;
-}
-.elk{
-    width: 250px;
-    height: 250px;
-}
-.nazv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.film_item{
+    margin: 5px;
+    text-align: center;
 }
